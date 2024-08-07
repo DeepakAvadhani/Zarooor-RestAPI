@@ -1,6 +1,6 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/sequelize');
-const OrderTable = require('./order_table.model');
+const OrderTable = require('./orders_table.model');
 const Grocery = require('./grocery.model');
 
 const OrderDetails = sequelize.define('OrderDetails', {

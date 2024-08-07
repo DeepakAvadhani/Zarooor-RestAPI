@@ -33,7 +33,7 @@ const Address = sequelize.define(
 );
 
 // Define associations
-User.hasMany(Address, { foreignKey: "user_id" });
-Address.belongsTo(User, { foreignKey: "user_id" });
+User.hasMany(Address, { foreignKey: "id" });
+Address.belongsTo(User, { foreignKey: "id" });
 
 module.exports = Address;

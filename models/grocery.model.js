@@ -48,7 +48,6 @@ const Grocery = sequelize.define(
   }
 );
 
-// Define associations
 ShopDetails.hasMany(Grocery, { foreignKey: "shop_id" });
 Grocery.belongsTo(ShopDetails, { foreignKey: "shop_id" });
 

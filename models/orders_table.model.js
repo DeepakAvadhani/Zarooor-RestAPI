@@ -37,8 +37,8 @@ const OrderTable = sequelize.define(
 );
 
 // Define associations
-User.hasMany(OrderTable, { foreignKey: "user_id" });
-OrderTable.belongsTo(User, { foreignKey: "user_id" });
+User.hasMany(OrderTable, { foreignKey: "id" });
+OrderTable.belongsTo(User, { foreignKey: "id" });
 
 Address.hasMany(OrderTable, { foreignKey: "address_id" });
 OrderTable.belongsTo(Address, { foreignKey: "address_id" });

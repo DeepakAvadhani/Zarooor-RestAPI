@@ -25,7 +25,7 @@ const Cart = sequelize.define(
 );
 
 // Define associations
-User.hasMany(Cart, { foreignKey: "user_id" });
-Cart.belongsTo(User, { foreignKey: "user_id" });
+User.hasMany(Cart, { foreignKey: "id" });
+Cart.belongsTo(User, { foreignKey: "id" });
 
 module.exports = Cart;
